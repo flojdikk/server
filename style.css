@@ -399,7 +399,6 @@ input[type="checkbox"] {
   display: block;
   width: 40px;
   height: 20px;
-  background: #092c3e;
   cursor: pointer;
   border-radius: 20px;
   overflow: hidden;
@@ -408,7 +407,6 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked~.check {
   background: #fff;
-  box-shadow: 0 0 0 2000px #092c3e;
 }
 
 .check:before {
@@ -427,7 +425,6 @@ input[type="checkbox"]:checked~.check {
 
 input[type="checkbox"]:checked~.check:before {
   transform: translateX(-50px);
-  background: #092c3e;
 }
 
 .check:after {
@@ -435,7 +432,6 @@ input[type="checkbox"]:checked~.check:before {
   position: absolute;
   top: 2px;
   right: 2px;
-  background: #092c3e;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -452,13 +448,13 @@ input[type="checkbox"]:checked~.check:after {
 .box {
   width: 800px;
   margin: 100px auto;
-  background: #953553;
+  background: #231F20;
   border-radius: 7px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .3);
 }
 
 .box .heading {
-  background: #953553;
+  background: #231F20;
   border-radius: 7px 7px 0px 0px;
   padding: 10px;
   color: black;
@@ -495,6 +491,7 @@ details summary {
 
 .text {
   font-size: 20px;
+  font-family: sans-serif;
 }
 
 .cta {
@@ -723,10 +720,6 @@ details summary {
 #header .hamburger.active .bar::after {
   top: 0;
 }
-
-/* End Header section */
-
-/* Hero Section */
 #hero {
   background-image: url(wp.png);
   background-size: cover;
@@ -798,10 +791,6 @@ details summary {
 #hero h1:nth-child(3) span {
   animation-delay: 2.5s;
 }
-
-/* End Hero Section */
-
-/* Services Section */
 #services .services {
   flex-direction: column;
   text-align: center;
@@ -1228,6 +1217,7 @@ body {
 
 .card * {
   transition: 0.3s ease all;
+  
 }
 
 .card img {
@@ -1236,6 +1226,7 @@ body {
   object-fit: cover;
   display: block;
   align-items: center;
+  margin-top: 20px;
 }
 
 .card h3 {
@@ -1352,6 +1343,7 @@ body {
   100% {
     opacity: 0;
     transform: scale(1.4);
+     
   }
 }
 
